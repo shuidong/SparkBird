@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/wayinfoback">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/image_container">
+			<ImageView android:id="@+id/image_view" android:src="@drawable/header"
+				android:layout_height="40dip" android:scaleType="fitXY"
+				android:layout_width="fill_parent"></ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="right">
+				<ImageButton android:layout_width="40dip"
+					android:layout_height="40dip" android:src="@drawable/mic_press"
+					android:scaleType="fitXY" android:background="#00000000"
+					android:id="@+id/imageButtonVoice" />
+				<ImageButton android:layout_width="40dip"
+					android:layout_height="40dip" android:src="@drawable/weibo_press"
+					android:scaleType="fitXY" android:background="#00000000"
+					android:id="@+id/imageButtonMenu" />
+				<ImageButton android:layout_width="40dip"
+					android:layout_height="40dip" android:src="@drawable/add_press"
+					android:scaleType="fitXY" android:background="#00000000"
+					android:id="@+id/imageButton1" />
+				<ImageButton android:layout_width="40dip"
+					android:layout_height="40dip" android:src="@drawable/refresh_press"
+					android:scaleType="fitXY" android:background="#00000000"
+					android:id="@+id/imageButton2" />
+			</LinearLayout>
+		</FrameLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="20dip" android:background="@drawable/timeback"
+		android:orientation="vertical" android:gravity="center_vertical">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center_vertical"
+			android:id="@+id/time" android:textColor="@color/black" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="100dip" android:background="@drawable/adback"
+		android:orientation="vertical" android:gravity="bottom">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="20dip" android:gravity="center_vertical"
+			android:text="  绿色畅行时，请注意车速！" android:textColor="@color/white" />
+	</LinearLayout>
+	<ListView android:layout_width="fill_parent" android:id="@+id/waystatus"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:layout_marginTop="0dip" android:fadingEdge="none"
+		android:scrollingCache="false" />
+	<FrameLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/image_container11"
+		android:layout_marginTop="0dip">
+		<ImageView android:id="@+id/image_view" android:src="@drawable/footer"
+			android:layout_height="40dip" android:scaleType="fitXY"
+			android:layout_width="fill_parent" android:layout_gravity="bottom" />
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_gravity="bottom">
+			<ImageButton android:layout_height="40dip"
+				android:background="@drawable/bgreen" android:layout_width="wrap_content"
+				android:id="@+id/imageBtn3" android:layout_weight="1" />
+			<ImageButton android:layout_height="40dip"
+				android:background="@drawable/slow" android:layout_width="wrap_content"
+				android:id="@+id/imageBtn2" android:layout_weight="1" />
+			<ImageButton android:layout_height="40dip"
+				android:background="@drawable/crowed" android:layout_width="wrap_content"
+				android:id="@+id/imageBtn1" android:layout_weight="1" />
+			<ImageButton android:layout_height="40dip"
+				android:background="@drawable/focus" android:layout_width="wrap_content"
+				android:id="@+id/imageBtn4" android:layout_weight="1" />
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

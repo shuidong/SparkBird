@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="autorefresh_dialog_items">
+		<item>1分钟</item>
+		<item>3分钟</item>
+		<item>5分钟</item>
+		<item>10分钟</item>
+		<item>20分钟</item>
+		<item>手动更新</item>
+	</string-array>
+</resources>

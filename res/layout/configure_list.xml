@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="?android:attr/listPreferredItemHeight"
+		android:background="@drawable/listitemback">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="0dip" android:layout_weight="1"
+			android:layout_height="fill_parent" android:padding="2dip">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="0dip" android:layout_weight="2" android:id="@+id/wayinfo"
+				android:gravity="center_vertical" android:textSize="17sp"
+				android:textColor="@color/black" android:text="时间间隔" />
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="0dip" android:layout_weight="1"
+				android:id="@+id/wayinfoDetail" android:singleLine="true"
+				android:textColor="@color/black" android:text="设置桌面小插件的更新时间间隔" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="?android:attr/listPreferredItemHeight"
+		android:background="@drawable/listitemback">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="0dip" android:layout_weight="1"
+			android:layout_height="fill_parent" android:padding="2dip">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="0dip" android:layout_weight="2" android:id="@+id/wayinfo"
+				android:gravity="center_vertical" android:textSize="17sp"
+				android:textColor="@color/black" android:text="默认显示" />
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="0dip" android:layout_weight="1"
+				android:id="@+id/wayinfoDetail" android:singleLine="true"
+				android:textColor="@color/black" android:text="设置桌面小插件默认显示什么情况的路段" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<Button android:layout_width="fill_parent" android:id="@+id/button1"
+		android:layout_height="wrap_content" android:text="确认设置"></Button>
+</LinearLayout>
+

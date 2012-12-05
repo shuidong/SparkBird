@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:updatePeriodMillis="1000" android:minHeight="230dp"
+	android:minWidth="249dp" android:initialLayout="@layout/lukuang_appwidget"
+	android:configure="SparkBird.SparkBirdWayInfo.LukuangWidgetConfiguration">
+</appwidget-provider>

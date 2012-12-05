@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/image_container">
+			<ImageView android:id="@+id/image_view" android:src="@drawable/header"
+				android:layout_height="40dip" android:scaleType="fitXY"
+				android:layout_width="fill_parent"></ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="right">
+				<ImageButton android:layout_width="40dip"
+					android:layout_height="40dip" android:src="@drawable/home_press"
+					android:scaleType="fitXY" android:background="#00000000"
+					android:id="@+id/imageButton2" />
+			</LinearLayout>
+		</FrameLayout>
+	</LinearLayout>
+
+    <WebView
+        android:id="@+id/webView_help"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</LinearLayout>

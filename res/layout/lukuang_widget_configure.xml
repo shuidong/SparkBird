@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView  
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="这是火鸟路况桌面小插件的配置页面，此画面可用于显示帮助信息以及配置桌面组件刷新频率等设置。目前尚处于开发阶段。"
+    />
+	<Button android:layout_width="fill_parent" android:id="@+id/button1" android:layout_height="wrap_content" android:text="知道了，开始吧。"></Button>
+</LinearLayout>

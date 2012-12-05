@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">火鸟路况(大连版)</string>
+    <string name="msg_network_error">抱歉，由于网络连接问题，无法为您更新当前路况信息，请检查您的网络连接或稍后再试。</string>
+    <string name="msg_server_error">网络状况不佳，请稍后再试。请确认您的移动网络设置中的接入点名称，设定为CMNET才可以正常访问火鸟路况。</string>
+    <string name="msg_init_error">抱歉，程序初始化失败，请重新启动</string>
+    <string name="msg_old_client">发现新版本,建议立即更新使用。</string>
+    <string name="msg_new_client">您使用的客户端已经是最新版本。</string>
+    <string name="msg_no_shoushuotts">第一次使用语音功能需要下载安装语音驱动，下载驱动将消耗8.38M的流量，建议在WIFI环境下下载。</string>
+    <string name="msg_title">提示</string>
+    <string name="msg_welcome">欢迎使用火鸟路况</string>
+    <string name="msg_shortcut">是否创建桌面快捷方式</string>
+    <string name="ok_btn">确定</string>
+    <string name="shoushuotts">shoushuoTTS</string>
+    <string name="app_widget_error_message">No messages.</string>
+    <string name="VersionTime">2011年11月28日</string>
+    <string name="copyright">Copyright© 2011-2012 安致创想  版权所有</string>
+    <string name="token">f4dc0e08b42f7a7318824c3dd032939f</string>
+    <string name="tokenSecret">0019d9bbfda20f119fa26ef6c6ec5ddd</string>
+    <string name="real_time_traffic">实时路况</string>
+    <string name="choose_layer">选择图层</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="maps_api_key">c2b0f58a6f09cafd1503c06ef08ac7aeb7ddb91a4db2d589c60355ba0d1263d0444f6008c69f153f</string>
+
+</resources>

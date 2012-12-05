@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="?android:attr/listPreferredItemHeight"
+	android:background="@drawable/listitemback"
+	android:descendantFocusability="blocksDescendants">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="70dip" android:layout_height="fill_parent"
+		android:background="@drawable/listitemheader">
+
+		<TextView android:id="@+id/listheader1" android:layout_width="70dip"
+			android:layout_height="fill_parent" android:text="01"
+			android:layout_weight="1" android:textSize="25sp" android:gravity="center"
+			android:textColor="@color/white" />
+		<TextView android:id="@+id/listheader2" android:layout_width="70dip"
+			android:layout_height="fill_parent" android:layout_weight="2"
+			android:textSize="10sp" android:gravity="center" android:textColor="@color/white" />		
+	</LinearLayout>
+
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="0dip" android:layout_weight="1"
+		android:layout_height="fill_parent" android:padding="2dip">
+
+		<TextView android:layout_width="fill_parent"
+			android:ellipsize="marquee" android:layout_height="0dip"
+			android:layout_weight="2" android:id="@+id/wayinfo" android:gravity="center_vertical"
+			android:textSize="17sp" android:textColor="@color/black" />
+
+		<TextView android:layout_width="fill_parent"
+			android:ellipsize="marquee" android:layout_height="0dip"
+			android:layout_weight="1" android:id="@+id/wayinfoDetail"
+			android:singleLine="true" android:textColor="@color/black" />
+		
+
+	</LinearLayout>
+	
+    <SparkBird.SparkBirdWayInfo.NoPressLinearLayout android:orientation="vertical"
+	android:layout_width="41dip" android:layout_height="fill_parent">
+		    <ImageButton
+			    android:id="@+id/weiboRt"
+			    android:layout_width="fill_parent"
+			    android:scaleType="centerCrop" android:background="#00000000"
+			    android:layout_height="fill_parent" 
+			    android:src="@drawable/weiboinfo_press" 
+			    android:clickable="true" 
+			    android:focusable="false"
+			   />
+    </SparkBird.SparkBirdWayInfo.NoPressLinearLayout>
+
+</LinearLayout>

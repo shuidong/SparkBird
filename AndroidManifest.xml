@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="2" android:versionName="1.2"
+	package="SparkBird.SparkBirdWayInfo">
+	<uses-sdk android:minSdkVersion="7" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	
+	<application android:icon="@drawable/sb004" android:label="@string/app_name"
+		android:screenOrientation="portrait">
+		<activity android:label="@string/app_name" android:name=".Welcome_Activity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MainWayInfo_Activity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <data android:scheme="sparkbird" android:host="MainWayInfo_Activity" /> 
+			</intent-filter>
+		</activity>
+		<activity android:name="About_Activity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <data android:scheme="sparkbird" android:host="About_Activity" /> 
+			</intent-filter>
+		</activity>
+		<activity android:name="Help_Activity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="WeiboDetail_Activity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="Traffic_Activity"
+		    android:screenOrientation="portrait">>
+		</activity>
+		<activity android:name=".CreateDeskTopShortCut">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+		</activity>
+		 <activity android:name=".OAuthActivity">
+	        <intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <data android:scheme="sparkbird" android:host="OAuthActivity" /> 
+			</intent-filter>
+        
+        </activity>
+		<activity-alias android:name=".CreateShortcuts"
+			android:targetActivity=".CreateDeskTopShortCut" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.CREATE_SHORTCUT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity-alias>
+		<service android:name="UpdateService">
+		</service>
+		<service android:name="GetshoushuoTTSService">
+		</service>
+<!-- 		<receiver android:name="LukuangWidgetProvider">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE">
+				</action>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@layout/lukuang_widgetinfo">
+			</meta-data>
+		</receiver> -->
+		<service android:name=".LukuangUpdateService">
+		</service>
+		<activity android:name="LukuangWidgetConfiguration"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"></action>
+			</intent-filter>
+		</activity>
+		<activity android:name="LukuangConfiguration"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="Weibo_Activity"
+			android:screenOrientation="portrait"></activity>
+		<meta-data android:value="4ec477935270151ff4000023" android:name="UMENG_APPKEY" />
+		<meta-data android:value="dalian1008.com" android:name="UMENG_CHANNEL"/>
+	</application>
+</manifest>

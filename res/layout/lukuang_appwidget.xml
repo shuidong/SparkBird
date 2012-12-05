@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+	Android:orientation="vertical" Android:layout_width="fill_parent"
+	Android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/image_container">
+			<ImageView android:id="@+id/image_view" android:src="@drawable/header"
+				android:layout_height="40dip" android:scaleType="fitXY"
+				android:layout_width="fill_parent"></ImageView>
+
+			<LinearLayout Android:id="@+id/app_widget_title"
+				Android:orientation="horizontal" Android:layout_width="fill_parent"
+				Android:layout_height="wrap_content">
+				<LinearLayout Android:orientation="vertical"
+					Android:layout_width="0dip" Android:layout_weight="1"
+					Android:layout_height="fill_parent" Android:padding="2dip">
+					<TextView Android:layout_width="fill_parent"
+						Android:text="@string/app_widget_error_message"
+						Android:layout_height="0dip" Android:layout_weight="1"
+						Android:id="@+id/widget_TextView_time" Android:gravity="center_vertical|right"
+						Android:textSize="13sp" />
+					<TextView Android:layout_width="fill_parent"
+						Android:text="@string/app_widget_error_message"
+						Android:layout_height="0dip" Android:layout_weight="1"
+						Android:id="@+id/widget_TextView_title" Android:gravity="center_vertical|right"
+						Android:textSize="12sp" />
+				</LinearLayout>
+			</LinearLayout>
+		</FrameLayout>
+	</LinearLayout>
+
+	<LinearLayout Android:id="@+id/app_widget_body_01"
+		Android:orientation="horizontal" Android:background="@drawable/image_widget_body_01"
+		Android:layout_width="fill_parent" Android:layout_height="wrap_content">
+		<LinearLayout Android:orientation="vertical"
+			Android:layout_width="0dip" Android:layout_weight="1"
+			Android:layout_height="fill_parent" Android:padding="2dip">
+			<TextView Android:layout_width="fill_parent"
+				Android:layout_height="0dip" Android:layout_weight="1"
+				Android:textSize="17sp" Android:textColor="@color/black" />
+			<TextView Android:layout_width="fill_parent"
+				Android:text="@string/app_widget_error_message"
+				Android:layout_height="0dip" Android:layout_weight="1"
+				Android:id="@+id/widget_TextView_lukuang1" Android:gravity="center_horizontal"
+				Android:textSize="17sp" Android:textColor="@color/black" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout Android:id="@+id/app_widget_body_02"
+		Android:orientation="horizontal" Android:background="@drawable/image_widget_body_02"
+		Android:layout_width="fill_parent" Android:layout_height="wrap_content">
+		<LinearLayout Android:orientation="vertical"
+			Android:layout_width="0dip" Android:layout_weight="1"
+			Android:layout_height="fill_parent" Android:padding="2dip">
+			<TextView Android:layout_width="fill_parent"
+				Android:layout_height="0dip" Android:layout_weight="1"
+				Android:textSize="17sp" Android:textColor="@color/black" />
+			<TextView Android:layout_width="fill_parent"
+				Android:text="@string/app_widget_error_message"
+				Android:layout_height="0dip" Android:layout_weight="3"
+				Android:id="@+id/widget_TextView_lukuang2" Android:gravity="center_horizontal"
+				Android:textSize="17sp" Android:textColor="@color/black" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout Android:id="@+id/app_widget_body_03"
+		Android:orientation="horizontal" Android:background="@drawable/image_widget_body_03"
+		Android:layout_width="fill_parent" Android:layout_height="wrap_content">
+		<LinearLayout Android:orientation="vertical"
+			Android:layout_width="0dip" Android:layout_weight="1"
+			Android:layout_height="fill_parent" Android:padding="2dip">
+			<TextView Android:layout_width="fill_parent"
+				Android:layout_height="0dip" Android:layout_weight="1"
+				Android:textSize="17sp" Android:textColor="@color/black" />
+			<TextView Android:layout_width="fill_parent"
+				Android:text="@string/app_widget_error_message"
+				Android:layout_height="0dip" Android:layout_weight="3"
+				Android:id="@+id/widget_TextView_lukuang3" Android:gravity="center_horizontal"
+				Android:textSize="17sp" Android:textColor="@color/black" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout Android:id="@+id/app_widget_body_04"
+		Android:orientation="horizontal" Android:background="@drawable/image_widget_body_04"
+		Android:layout_width="fill_parent" Android:layout_height="wrap_content">
+		<LinearLayout Android:orientation="vertical"
+			Android:layout_width="0dip" Android:layout_weight="1"
+			Android:layout_height="fill_parent" Android:padding="2dip">
+			<TextView Android:layout_width="fill_parent"
+				Android:layout_height="0dip" Android:layout_weight="1"
+				Android:textSize="17sp" Android:textColor="@color/black" />
+			<TextView Android:layout_width="fill_parent"
+				Android:text="@string/app_widget_error_message"
+				Android:layout_height="0dip" Android:layout_weight="3"
+				Android:id="@+id/widget_TextView_lukuang4" Android:gravity="center_horizontal"
+				Android:textSize="17sp" Android:textColor="@color/black" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/wayinfoback">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:gravity="center" android:layout_height="wrap_content">
+		<ImageButton android:layout_width="wrap_content"
+			android:gravity="center" android:layout_height="wrap_content"
+			android:src="@drawable/sb004" android:background="#00000000"
+			android:id="@+id/btnlogo" />
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="2dip">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:id="@+id/aboutTitle1" android:textSize="17sp" android:text="@string/app_name" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:id="@+id/aboutTitle2" android:textSize="17sp" android:text="@string/app_name" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<ImageView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/lineTitle"
+		android:src="@drawable/split" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="10px" android:layout_height="wrap_content"
+		android:layout_weight="1" android:id="@+id/about1" android:gravity="left"
+		android:textSize="15sp" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="10px" android:layout_height="wrap_content"
+		android:layout_weight="1" android:id="@+id/about2" android:gravity="left"
+		android:textSize="15sp" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="10px" android:layout_height="wrap_content"
+		android:layout_weight="1" android:id="@+id/about3" android:gravity="left"
+		android:textSize="15sp" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="10px" android:layout_height="wrap_content"
+		android:layout_weight="1" android:id="@+id/about4" android:gravity="left"
+		android:textSize="15sp" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="10px" android:layout_height="wrap_content"
+		android:layout_weight="1" android:id="@+id/about5" android:gravity="left"
+		android:textSize="15sp" />
+
+<!-- 	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="10px" android:layout_height="wrap_content"
+		android:layout_weight="1" android:id="@+id/about6" android:gravity="left"
+		android:textSize="15sp" />
+	
+	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="10px" android:layout_height="wrap_content"
+		android:layout_weight="1" android:id="@+id/about7" android:gravity="left"
+		android:textSize="15sp" /> -->
+	
+	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="10px" android:layout_height="wrap_content"
+		android:layout_weight="1" android:id="@+id/about8" android:gravity="left"
+		android:textSize="15sp" />
+	
+	<TextView android:layout_width="fill_parent"
+		android:layout_marginLeft="10px" android:layout_height="wrap_content"
+		android:layout_weight="1" android:id="@+id/about9" android:gravity="left"
+		android:textSize="15sp" />	
+	<ImageView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/lineBottom"
+		android:src="@drawable/split" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:id="@+id/about10" android:gravity="center" android:textSize="15sp" />
+</LinearLayout>
